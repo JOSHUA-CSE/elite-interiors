@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 export default function SEO({ title, description, url, isArticle, structuredData }) {
   const siteName = "Elite Interiors";
   const defaultDescription = "Premier architectural fabrication and interior design company in Tamil Nadu. Specialists in modular kitchens, wardrobes, luxury villas, and turnkey interior solutions.";
-  const siteUrl = "https://elite-interiors.vercel.app";
+  const siteUrl = "https://elite_interiors.vercel.app";
   const pageTitle = title ? `${title} | ${siteName}` : siteName;
   const pageDescription = description || defaultDescription;
   const pageUrl = url ? `${siteUrl}${url}` : siteUrl;
@@ -61,7 +61,7 @@ export default function SEO({ title, description, url, isArticle, structuredData
       {/* Geo Tags for Local SEO */}
       <meta name="geo.region" content="IN-TN" />
       <meta name="geo.placename" content="Coimbatore" />
-      
+
       {/* OpenGraph */}
       <meta property="og:site_name" content={siteName} />
       <meta property="og:title" content={pageTitle} />
@@ -73,7 +73,7 @@ export default function SEO({ title, description, url, isArticle, structuredData
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={pageDescription} />
-      
+
       {/* Search Engine Tags */}
       <meta name="robots" content="index, follow" />
       <meta name="author" content={siteName} />
